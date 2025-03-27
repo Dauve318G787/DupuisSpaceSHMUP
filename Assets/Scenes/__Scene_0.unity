@@ -578,6 +578,7 @@ GameObject:
   - component: {fileID: 1803229974}
   - component: {fileID: 1803229973}
   - component: {fileID: 1803229975}
+  - component: {fileID: 1803229976}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -674,6 +675,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1803229976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803229969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c483e61da9e83c94295cbcd0b239fc6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationsPerSecond: 0.1
+  levelShown: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
