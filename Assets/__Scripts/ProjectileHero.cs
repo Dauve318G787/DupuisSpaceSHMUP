@@ -1,16 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+
+[RequireComponent( typeof(BoundsCheck ) ) ]
 
 public class ProjectileHero : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+
+    private BoundsCheck bndCheck;
+
+    void Awake() {
+        bndCheck = GetComponent<BoundsCheck>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if( bndCheck.LocIs( BoundsCheck.eScreenLocs.offUp ) ) {
+            Destroy( gameObject );
+        }
         
     }
 }
