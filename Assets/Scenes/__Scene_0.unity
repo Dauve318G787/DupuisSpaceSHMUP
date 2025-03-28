@@ -579,6 +579,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dce0c1a1a42be34ebdb24078adbbe6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boundsType: 1
+  radius: 4
   camWidth: 0
   camHeight: 0
 --- !u!1 &1803229969
